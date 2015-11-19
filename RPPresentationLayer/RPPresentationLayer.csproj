@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0CF491A8-BCBC-41CA-BC3B-A845714230F5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPPresentationLayer</RootNamespace>
+    <AssemblyName>RPPresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicantDetails.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="GetInterviewSchedulePL.aspx" />
+    <Content Include="images\024-preview.jpg" />
+    <Content Include="images\background.png" />
+    <Content Include="images\bannerJobs.jpg" />
+    <Content Include="images\bg_body_0.jpg" />
+    <Content Include="images\degree_program_graduates.jpg" />
+    <Content Include="images\download %281%29.jpg" />
+    <Content Include="images\download.jpg" />
+    <Content Include="images\images %281%29.jpg" />
+    <Content Include="images\images %282%29.jpg" />
+    <Content Include="images\images %283%29.jpg" />
+    <Content Include="images\images.jpg" />
+    <Content Include="images\imagesCA3TM5V9.jpg" />
+    <Content Include="images\imagesCAP3ZKNL.jpg" />
+    <Content Include="images\imagesCAPHPBPA.jpg" />
+    <Content Include="images\jbp1.jpg" />
+    <Content Include="images\job-portal-banner.png" />
+    <Content Include="images\jobportal.jpg" />
+    <Content Include="images\Jobportal_Teaser.jpg" />
+    <Content Include="images\PMG_Jobs_banner.jpg" />
+    <Content Include="images\untitled.png" />
+    <Content Include="JobPostingApprovalByAdmin.aspx" />
+    <Content Include="JobPostPage.aspx" />
+    <Content Include="JobSearchAndApplyPL.aspx" />
+    <Content Include="JobSeekerDetails.aspx" />
+    <Content Include="JobSeekerHomePage.aspx" />
+    <Content Include="JobSeekerProfileCreationPLL.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="PostDetail.aspx" />
+    <Content Include="RecruiterProfile.aspx" />
+    <Content Include="ResumePopup.aspx" />
+    <Content Include="Scripts\additional-methods.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.validation.js" />
+    <Content Include="SearchJobSeekerProfilePL.aspx" />
+    <Content Include="ShowApplicantsDetailsPL.aspx" />
+    <Content Include="ShowPostings.aspx" />
+    <Content Include="style.css" />
+    <Content Include="StyleSheet.css" />
+    <Content Include="UserRegistration.aspx" />
+    <Content Include="ViewRecruiterProfile.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicantDetails.aspx.cs">
+      <DependentUpon>ApplicantDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicantDetails.aspx.designer.cs">
+      <DependentUpon>ApplicantDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetInterviewSchedulePL.aspx.cs">
+      <DependentUpon>GetInterviewSchedulePL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetInterviewSchedulePL.aspx.designer.cs">
+      <DependentUpon>GetInterviewSchedulePL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobPostingApprovalByAdmin.aspx.cs">
+      <DependentUpon>JobPostingApprovalByAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobPostingApprovalByAdmin.aspx.designer.cs">
+      <DependentUpon>JobPostingApprovalByAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobPostPage.aspx.cs">
+      <DependentUpon>JobPostPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobPostPage.aspx.designer.cs">
+      <DependentUpon>JobPostPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSearchAndApplyPL.aspx.cs">
+      <DependentUpon>JobSearchAndApplyPL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSearchAndApplyPL.aspx.designer.cs">
+      <DependentUpon>JobSearchAndApplyPL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeekerDetails.aspx.cs">
+      <DependentUpon>JobSeekerDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerDetails.aspx.designer.cs">
+      <DependentUpon>JobSeekerDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeekerHomePage.aspx.cs">
+      <DependentUpon>JobSeekerHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerHomePage.aspx.designer.cs">
+      <DependentUpon>JobSeekerHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeekerProfileCreationPLL.aspx.cs">
+      <DependentUpon>JobSeekerProfileCreationPLL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerProfileCreationPLL.aspx.designer.cs">
+      <DependentUpon>JobSeekerProfileCreationPLL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PostDetail.aspx.cs">
+      <DependentUpon>PostDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostDetail.aspx.designer.cs">
+      <DependentUpon>PostDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecruiterProfile.aspx.cs">
+      <DependentUpon>RecruiterProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecruiterProfile.aspx.designer.cs">
+      <DependentUpon>RecruiterProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecruitmentPortal.Master.cs">
+      <DependentUpon>RecruitmentPortal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecruitmentPortal.Master.designer.cs">
+      <DependentUpon>RecruitmentPortal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ResumePopup.aspx.cs">
+      <DependentUpon>ResumePopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResumePopup.aspx.designer.cs">
+      <DependentUpon>ResumePopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchJobSeekerProfilePL.aspx.cs">
+      <DependentUpon>SearchJobSeekerProfilePL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchJobSeekerProfilePL.aspx.designer.cs">
+      <DependentUpon>SearchJobSeekerProfilePL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowApplicantsDetailsPL.aspx.cs">
+      <DependentUpon>ShowApplicantsDetailsPL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowApplicantsDetailsPL.aspx.designer.cs">
+      <DependentUpon>ShowApplicantsDetailsPL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPostings.aspx.cs">
+      <DependentUpon>ShowPostings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowPostings.aspx.designer.cs">
+      <DependentUpon>ShowPostings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.designer.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRecruiterProfile.aspx.cs">
+      <DependentUpon>ViewRecruiterProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewRecruiterProfile.aspx.designer.cs">
+      <DependentUpon>ViewRecruiterProfile.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RPBusinessLogicLayer\RPBusinessLogicLayer.csproj">
+      <Project>{D9B45AFE-233D-4709-AA63-DD765DB8A2F0}</Project>
+      <Name>RPBusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPBusinessObject\RPBusinessObject.csproj">
+      <Project>{99564618-B7B8-4B51-958C-8D8DA043463A}</Project>
+      <Name>RPBusinessObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPDataAccessLayer\RPDataAccessLayer.csproj">
+      <Project>{175037AE-3506-45BD-949A-BFE27E7A5FAF}</Project>
+      <Name>RPDataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RecruitmentPortal.Master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61253</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
